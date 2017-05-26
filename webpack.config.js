@@ -48,10 +48,10 @@ const config = {
 		new HtmlWebpackPlugin({
 			template: './app/index.html'
 		}),
-		/*new HtmlWebpackIncludeAssetsPlugin({
-		    assets: ['css/base.css'],
+		new HtmlWebpackIncludeAssetsPlugin({
+		    assets: ['node_modules/font-awesome/css/font-awesome.min.css','node_modules/bootstrap/dist/css/bootstrap.min.css'],
 		    append: false
-		}),*/
+		}),
 		new webpack.optimize.UglifyJsPlugin(),
 		new webpack.ProvidePlugin({
 			$: 'jquery',
